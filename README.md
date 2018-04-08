@@ -11,6 +11,7 @@ Starting with level 0
 3. Using Package Control, Install:
 
     -   Predawn Theme
+    -   Flat Land Theme (as optional, but it looks good)
     -   Materialize Theme
     -   AutoPEP8  (#this is for python format checker)
     -   Anaconda    (# for autoPEP8 formating and linting, NOTE: Disable AutoPEP8 when using this.)
@@ -164,5 +165,6 @@ Starting with level 0
 
 9. Now Ctrl + B, responds to running currently python program
 
-
+10. Optional: switch between Theme, like change to Flatland theme by editing in preference > settings > Settings- User
+    change in 'theme' value to Flatland Dark.sublime-theme
 
