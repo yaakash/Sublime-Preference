@@ -10,9 +10,8 @@ Starting with level 0
 2. Install Package Control - https://packagecontrol.io
 3. Using Package Control, Install:
 
-    -   Predawn Theme
-    -   Flat Land Theme (as optional, but it looks good)
     -   Materialize Theme
+    -   File Icon
     -   AutoPEP8  (#this is for python format checker)
     -   Anaconda    (# for autoPEP8 formating and linting, NOTE: Disable AutoPEP8 when using this.)
     -   SublimeREPL
@@ -23,16 +22,9 @@ Starting with level 0
 
 #########################  Customize and Looks ##############################
 
-4. Now Activate Predawn theme :
+4. Now Activate Materialize theme :
 
-    -  Preferences > Setting > Preferences.Sublime-settings - User
-        - delete every thing and paste this with braces:
-                
-                {
-                "theme": "predawn-DEV.sublime-theme",
-                "color_scheme": "Packages/Predawn/predawn.tmTheme", 
-                }
-            
+    -  Preferences > Theme 
     - save and exit sublime3.
 
 5.  Choose a color Scheme from Materialize
@@ -47,19 +39,6 @@ Starting with level 0
           "font_face": "inconsolata",
           "font_size": 16,
           "gutter": true,
-          "predawn_findreplace_small": true,
-          "predawn_quick_panel_small": true,
-          "predawn_sidebar_arrows": false,
-          "predawn_sidebar_large": false,
-          "predawn_sidebar_medium": false,
-          "predawn_sidebar_narrow": false,
-          "predawn_sidebar_small": false,
-          "predawn_sidebar_xlarge": false,
-          "predawn_sidebar_xsmall": true,
-          "predawn_tabs_active_underline": false,
-          "predawn_tabs_large": false,
-          "predawn_tabs_medium": false,
-          "predawn_tabs_small": true,
           "ignored_packages":
           [
               "Vintage"
@@ -138,22 +117,8 @@ Starting with level 0
 
 ###################  Making Builds for running python programs  #################
 
-8.  Make a new Build for running python programs  - Name it "myPython"     
-    THIS is optional to make this build, coz if anaconda is installed, it gives its own build for python, Select that in Builds!
-    But still if wanna, go ahead.
-
-    -  Tools > Build System > New Build System
-    -  Paste this with braces: (edit python.exe path, if changed during python install.)
-    
-        {
-
-              "cmd": ["C:\\Users\\hp1\\AppData\\Local\\Programs\\Python\\Python36-32\\python.exe", "-u", "$file"],
-              "file_regex": "^[]*file \"(...*?)\", line([0-9]*)",
-              "selector": "source.python"
-
-       }
-
-9. Make another Build System - name it "REPL_python"
+9. Make a Build System for conda env
+    follow this blog post : https://www.yaakash.website/2018/07/how-to-add-conda-environments-to.html
 
     - paste this in build file:
 
