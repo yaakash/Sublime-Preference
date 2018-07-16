@@ -10,10 +10,10 @@ Starting with level 0
 2. Install Package Control - https://packagecontrol.io
 3. Using Package Control, Install:
 
-    -   Materialize Theme
-    -   File Icon
+    -   Materialize Theme (use subtheme - Material Dracula)
+    -   FileIcons
     -   AutoPEP8  (#this is for python format checker)
-    -   Anaconda    (# for autoPEP8 formating and linting, NOTE: Disable AutoPEP8 when using this.)
+    -   Anaconda  (# for autoPEP8 formating and linting, NOTE: Disable AutoPEP8 when using this.)
     -   SublimeREPL
     -   SublimeCodeIntel  (#for python autocompletion - IDE feature like)
     -   BracketHighlighter
@@ -24,65 +24,42 @@ Starting with level 0
 
 4. Now Activate Materialize theme :
 
-    -  Preferences > Theme 
-    - save and exit sublime3.
+    -  Preferences > Theme > Material Dracula
 
 5.  Choose a color Scheme from Materialize
-        - preferences > color scheme > materialize > Brogramming
-        - save and exit sublime3
+       
+    - preferences > color scheme > materialize > Mariana
 
 6.  Add additional settings into "Preferences.Sublime-settings - User"
 
     - Paste these inside braces:
     
-          "always_show_minimap_viewport": true,
-          "font_face": "inconsolata",
-          "font_size": 16,
-          "gutter": true,
-          "ignored_packages":
-          [
-              "Vintage"
-          ],
-          "line_padding_bottom": 1,
-          "line_padding_top": 1,
-          "match_brackets_content": false,
-          "match_selection": false,
-          "match_tags": true,
-          "open_files_in_new_window": false,
-          "overlay_scroll_bars": "enabled",
-          "preview_on_click": true,
-          "scroll_past_end": true,
-          "scroll_speed": 5.0,
-          "show_full_path": false,
-          "sidebar_default": true,
-          "translate_tabs_to_spaces": true,
-          "trim_trailing_white_space_on_save": true,
-          "word_wrap": true,
-          "show_definitions": true,
-          "show_encoding": true,
-          "show_errors_inline": false,
-          "save_on_focus_lost": false,
-          "ensure_newline_at_eof_on_save": true,
-          "highlight_modified_tabs": true,
-          "use_simple_full_screen": true,
-          "folder_exclude_patterns": [".svn", ".git", ".hg", "CVS"],
-          "file_exclude_patterns": ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.sublime-workspace"],
-          "font_options":
-          [
-              "subpixel_antialias"
-          ],
-          "bold_folder_labels": true,
-          "caret_extra_width": 1,
-          "caret_style": "phase",
-          "close_windows_when_empty": false,
-          "copy_with_empty_selection": false,
-          "drag_text": false,
-          "draw_minimap_border": true,
-          "enable_tab_scrolling": false,
-          "highlight_line": true,
-          "highlight_modified_tabs": true,
-          "shift_tab_unindent": true,
-          "auto_complete_commit_on_tab": true
+          {
+            "color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
+            "draw_white_space": "all",
+            "font_face": "inconsolata",
+            "font_size": 17,
+            "gutter": true,
+            "highlight_modified_tabs": true,
+            "match_brackets_content": false,
+            "word_wrap": true,
+            "show_definitions": true,
+            "show_encoding": true,
+            "open_files_in_new_window": false,
+            "overlay_scroll_bars": "enabled",
+            "ignored_packages":
+            [
+                "Vintage"
+            ],
+            "shift_tab_unindent": true,
+            "theme": "Material Dracula.sublime-theme",
+            "scroll_past_end": true,
+            "translate_tabs_to_spaces": true,
+            "folder_exclude_patterns": [".svn", ".git", ".hg", "CVS"],
+            "file_exclude_patterns": ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", 
+            "*.ncb","*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.sublime-workspace"],
+            }
+
     
 
 7. Anaconda Autoformater and linter Settings:
